@@ -1,0 +1,63 @@
+
+
+
+
+<section>
+    <div class="container" style="background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;">
+
+        <div class="card" style="width: 400px;
+    padding: 20px;
+    border:none;">
+
+            <form action="/signup" method="post">
+
+                <div class="mt-4 text-center">
+
+                    <h4>Sign Up</h4>
+
+
+                    <div class="mt-3 inputbox" style=" margin-bottom: 10px;
+    position: relative;">
+
+                        <div class="row g-2 mt-1">
+                            <div class="col-md-6">
+                                <div class="input-field"> <input class="form-control" name="fname" id="input1" required> <label
+                                        for="input1">First Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-field"> <input class="form-control" name="lname" id="input2" required> <label
+                                        for="input2">Last Name</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-12">
+                                <div class="input-field"> <input class="form-control" name="email" id="input3" required> <label
+                                        for="input3">Email</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-field"> <input class="form-control"type="password" name="password" id="input4" required> <label
+                                for="input4">Password</label>
+                        </div>
+                    </div>
+                </div>
+                <span class="">Password must be atleast 8 characters</span>
+                <div class="row mt-2">
+                    <div class="col-md-12"> <button class="btn btn-primary w-100 signup-button">Signup</button>
+                    </div>
+                </div>
+                <div class="member mt-1">
+                    <span>Already have an account?</span>
+                    <a class="text-decoration-none" href="/login">Signin</a>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</section>

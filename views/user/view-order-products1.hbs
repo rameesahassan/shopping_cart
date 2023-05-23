@@ -1,0 +1,55 @@
+<div class="container-fluid">
+
+<div class="container">
+  <!-- Title -->
+  <div class="d-flex justify-content-between align-items-center py-3">
+    <h2 class="h5 mb-0"><a href="#" class="text-muted"></a> My Order</h2>
+  </div>
+
+  <!-- Main content -->
+  <div class="row">
+    <div class="col-lg-8">
+      <!-- Details -->
+      <div class="card mb-4">
+        <div class="card-body">
+        <div class="mb-3 d-flex justify-content-between">
+         
+        <table class="table table-bordless mt-5">
+         
+                <tr>
+                    <th scope="col">Item</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Price</th>
+                    
+                </tr>   
+          </div>
+
+            <tbody>
+            {{#each products}}
+              <tr>
+                <td>
+                  <div class="d-flex mb-2">
+                    <div class="flex-shrink-0">
+                      <img src="/product-images/{{this.product._id}}.png" alt="" width="35" class="img-fluid">
+                    </div>
+                    <div class="flex-lg-grow-1 ms-3">
+                      <h6 class="small mb-0"><a href="#" class="text-reset"></a></h6>
+                      <span class="small">{{this.product.Name}}</span>
+                    </div>
+                  </div>
+                </td>
+                <td>{{this.quantity}}</td>
+                <td class="text-end">{{this.product.Price}}</td>
+              </tr>
+              {{/each}}
+            </tbody>
+          
+          </table>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</div>
+</div>

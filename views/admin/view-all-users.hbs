@@ -1,0 +1,31 @@
+
+<section>
+    <div class="container">
+        <h1>All Users</h1>
+
+{{#if users.length}}
+  <table class="table">
+    <thead>
+      <tr>
+        <th>User ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      {{#each users}}
+        <tr>
+          <td>{{this._id}}</td>
+          <td>{{this.fname}}</td>
+          <td>{{this.email}}</td>
+          
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  
+{{/if}}
+
+    </div>
+</section>

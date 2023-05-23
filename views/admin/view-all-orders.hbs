@@ -1,0 +1,32 @@
+
+<section>
+    <div class="container">
+        <h1>All Orders</h1>
+
+{{#if orders.length}}
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Order ID</th>
+        <th>Customer Mobile No</th>
+        <th>Order Date</th>
+        <th>Order Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each orders}}
+        <tr>
+          <td>{{this._id}}</td>
+          <td>{{this.delivaryDetails.mobile}}</td>
+          <td>{{this.date}}</td>
+          <td>{{this.status}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+{{else}}
+  <p>No orders found.</p>
+{{/if}}
+
+    </div>
+</section>
